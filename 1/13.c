@@ -28,7 +28,7 @@ int main () {
 	}
 	while (lngst--) {	/* for each count */
 		printf("%2.d|", lngst+1);			/* length */
-		while (count[lngst]--) printf("#");	/* count (bar) */
-		printf("\n");						/* newline */
+		while (count[lngst]--) putchar('#');/* count (bar) */
+		putchar('\n');						/* newline */
 	}	
 }
